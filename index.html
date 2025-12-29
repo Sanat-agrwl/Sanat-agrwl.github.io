@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sanat Agrawal - Electrical Engineer & AI Researcher. IIT Bombay.">
+    <title>Sanat Agrawal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header id="navbar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+           <a href="#hero" class="logo">
+            <img src="logos/sign_logo.png" alt="Sanat AgrawalLogo" class="logo-image">
+            </a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="name">Sanat Agrawal</h1>
+                    <h2 class="tagline">Researcher & Developer</h2>
+                    <p class="bio-text">
+                        A fourth-year undergraduate at <strong>IIT Bombay</strong> from Balangir, Odisha. I blend research and technology to build intelligent systems that solve real-world problems.
+                    </p>
+                    <p class="bio-text">
+                        I'm driven by curiosity, problem-solving, and the challenge of creating impact through both research and code.
+                    </p>
+                    <div class="cta-group">
+                        <a href="mailto:sanatagrwl@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/Sanat-agrwl" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sanat-agrawal-249064255/" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="logos/me.jpeg" alt="Sanat Agrawal" class="profile-pic">
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title"><span>01.</span> Where I've Worked</h2>
+            <div class="cards-container">
+                
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/idiap.jpeg" alt="Idiap Research Institute" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Research Intern <span class="company">@ Idiap Research Institute</span></h3>
+                        <span class="card-meta">October 2025 - Present | Martigny, Switzerland</span>
+                        <ul class="card-details">
+                            <li>Developed a hybrid <strong>Text-to-Speech (TTS)</strong> system combining <strong>Festival KAL diphone synthesis</strong> with <strong>k-nearest-neighbor voice conversion (kNN-VC)</strong> for zero-shot multi-speaker synthesis.</li>
+                            <li>Leveraged <strong>WavLM self-supervised embeddings</strong> and <strong>HiFiGAN vocoding</strong> to achieve significant quality improvements: <strong>+0.81 UTMOS gain</strong> while maintaining high intelligibility across five speaker conditions.</li>
+                            <li>Implemented linear interpolation parameter for controllable voice morphing and validated zero-shot capability on unseen speakers from LibriSpeech.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/nt.jpeg" alt="Novare Talent" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Founding Engineer <span class="company">@ Novare Talent</span></h3>
+                        <span class="card-meta">July 2025 - Present</span>
+                        <ul class="card-details">
+                            <li>Architected and deployed a full-stack <strong>AI-powered talent matching platform</strong> using <strong>Next.js frontend</strong> and <strong>Python FastAPI backend</strong> with <strong>Supabase</strong> for real-time database management and authentication.</li>
+                            <li>Built intelligent <strong>AI-driven form creation and evaluation system</strong> leveraging <strong>OpenAI and Google Gemini APIs</strong> to dynamically generate customized assessments and automatically evaluate student responses with precision scoring.</li>
+                            <li>Implemented <strong>resume parsing and intelligent matching engine</strong> with cached text processing for rapid candidate-to-opportunity matching, helping companies find best-fit talent and students discover ideal opportunities in real-time.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/salesagents.jpeg" alt="SalesAgent.ai" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>AI & Systems Intern <span class="company">@ SalesAgent.ai</span></h3>
+                        <span class="card-meta">June 2025 - August 2025</span>
+                        <ul class="card-details">
+                            <li>Engineered a <strong>production-grade real-time multilingual speech-to-text pipeline</strong> integrating <strong>OpenAI Whisper</strong> and <strong>Sarvamai STT</strong> with hybrid fallback mechanisms for robust transcription across English and Indian languages.</li>
+                            <li>Implemented <strong>language detection and dynamic agent switching</strong> using <strong>LangDetect</strong> to automatically identify caller language (Hindi, Marathi, Tamil, etc.) and route to appropriate agent configuration with context preservation.</li>
+                            <li>Developed <strong>end-to-end voice synthesis</strong> using <strong>AI4Bharat TTS</strong> for Indian language support, enabling sales agents to respond in customer's native language with natural prosody and cultural nuance.</li>
+                            <li>Optimized streaming audio processing with <strong>chunked buffering</strong> and <strong>background VAD (Voice Activity Detection)</strong> to reduce latency by <strong>40%</strong> while maintaining accuracy for concurrent voice agent calls.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/asu.webp" alt="Arizona State University" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Research Intern <span class="company">@ Arizona State University</span></h3>
+                        <span class="card-meta">May 2024 - July 2024 | Tempe, Arizona, USA</span>
+                        <ul class="card-details">
+                            <li><strong>Lab:</strong> Power Electronics & Control Lab (Prof. Ayan Mallik) - focusing on advanced converter optimization and AI-driven control.</li>
+                            <li>Developed a <strong>Physics-Informed Neural Network (PINN)</strong> architecture integrating <strong>TensorFlow/Keras</strong> with differential equations to estimate parametric uncertainties (inductor saturation, parasitic resistances) in <strong>Dual Active Bridge (DAB) DC-DC converters</strong> with <strong>92% accuracy</strong>.</li>
+                            <li>Engineered comprehensive <strong>dataset pipeline</strong> with MATLAB simulation of physics-based models, created 10k+ training samples with systematic parameter variation, and implemented <strong>data preprocessing</strong> with scikit-learn scalers for robust neural network training.</li>
+                            <li>Validated PINN predictions against <strong>hardware experimental data</strong> and comparative MATLAB-Simulink models, achieving superior generalization compared to purely data-driven baselines across unseen parameter regimes.</li>
+                            <li>Designed and implemented <strong>adaptive loss-optimal control algorithm</strong> leveraging PINN-estimated parameters to dynamically adjust switching commands, achieving <strong>67% efficiency improvement</strong> under varying load and temperature conditions.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="education" class="section">
+            <h2 class="section-title"><span>02.</span> Education</h2>
+            <div class="cards-container">
+                
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/iitb.png" alt="IIT Bombay" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Indian Institute of Technology, Bombay</h3>
+                        <span class="card-meta">October 2022 - May 2027</span>
+                        <p class="card-description"><strong>Dual Degree (B.Tech + M.Tech) in Electrical Engineering</strong></p>
+                        <p class="card-description">Specialization: Communications and Signal Processing (CSP) | Minor: Centre for Machine Intelligence and Data Science (C-MInDS)</p>
+                        <!-- <p class="card-score">CPI: 9.45 / 10.0 | Dept Rank: 4 / 98</p> -->
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/epfl.png" alt="EPFL" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>EPFL (Swiss Federal Institute of Technology)</h3>
+                        <span class="card-meta">September 2025 - February 2026</span>
+                        <p class="card-description">Semester exchange student pursuing advanced coursework while conducting research in Automatic Audio Processing.</p>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/arihant.jpeg" alt="Arihant Public School" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Arihant Public School, Kota</h3>
+                        <span class="card-meta">April 2020 - July 2022</span>
+                        <p class="card-description">Pursued my senior secondary education in Science & Maths, CBSE</p>
+                        <p class="card-score">Secured <strong>96.3%</strong> in CBSE Class 12th Board Examination</p>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-logo">
+                        <img src="logos/lfs.jpg" alt="Little Flower School" class="card-logo-img">
+                    </div>
+                    <div class="card-content">
+                        <h3>Little Flower School, Balangir</h3>
+                        <span class="card-meta">April 2008 - March 2020</span>
+                        <p class="card-description">Pursued my primary and secondary education, ICSE</p>
+                        <p class="card-score">Secured <strong>97.6%</strong> in ICSE Class 10th Board Examination</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- <section id="research" class="section">
+            <h2 class="section-title"><span>03.</span> Featured Research</h2>
+            <div class="paper-card">
+                <div class="paper-content">
+                    <h3 class="paper-title">Hybrid Diphone and kNN-Based Voice Conversion for Zero-Shot Multi-Speaker TTS</h3>
+                    <p class="paper-abstract">
+                        We proposed a novel hybrid TTS system combining traditional Festival KAL diphone concatenation with k-nearest-neighbor voice conversion (kNN-VC). Using self-supervised speech representations (WavLM) and HiFiGAN vocoding, we achieved significant quality improvements <strong>(+0.81 UTMOS)</strong> while maintaining high intelligibility.
+                    </p>
+                    <div class="paper-tags">
+                        <span>Speech Synthesis</span>
+                        <span>WavLM</span>
+                        <span>kNN-VC</span>
+                        <span>HiFiGAN</span>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="projects" class="section">
+            <h2 class="section-title"><span>04.</span> Technical Projects</h2>
+            <div class="projects-grid">
+                
+                <a href="https://github.com/Sanat-agrwl/cs747A3" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Autonomous Racing Agent</h3>
+                        <p>
+                            Developed an RL agent to navigate dynamic tracks using a 13x13 sensor grid. Optimized control policies via CMA-ES over 100 generations, achieving a <strong>>80% lower crash rate</strong> compared to baseline.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>Python</li>
+                            <li>Reinforcement Learning</li>
+                            <li>CMA-ES</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Sanat-agrwl/Cough-based-detection" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Cough-Based Disease Detection</h3>
+                        <p>
+                            Engineered a dual-input neural architecture (BiLSTM + CNN) achieving <strong>96.33% accuracy</strong> in Tuberculosis detection from audio signals. Utilized SMOTE for handling imbalanced datasets.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>Deep Learning</li>
+                            <li>BiLSTM</li>
+                            <li>Audio Processing</li>
+                        </ul>
+                    </div>
+                </a>
+
+                
+
+                <a href="https://github.com/Sanat-agrwl/Pose-estimator" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Real-time Posture Monitoring</h3>
+                        <p>
+                            Built a computer vision system using Mediapipe delivering <strong>&lt;0.1s latency</strong>. Includes a Bicep Curl and Pushup detector with >90% accuracy using joint-angle analysis.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>OpenCV</li>
+                            <li>Mediapipe</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Sanat-agrwl/LLM" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Dropbox AI Chat for Research Papers</h3>
+                        <p>
+                            AI-powered research paper analysis tool using <strong>RAG (Retrieval-Augmented Generation)</strong> for real-time data extraction. Enables researchers to quickly summarize lengthy papers and extract critical findings from unstructured documents in Dropbox/OneDrive with precision and efficiency.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>LLMs</li>
+                            <li>RAG</li>
+                            <li>OpenAI API</li>
+                            <li>Streamlit</li>
+                            <li>Dropbox API</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="https://github.com/Sanat-agrwl/Smart-Walker" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Smart Walker for Clinical Rehabilitation</h3>
+                        <p>
+                            Designed an intelligent walker equipped with <strong>load sensors</strong> and <strong>ArUco marker-based foot detection</strong> to guide patients through rehabilitation. Provides real-time haptic & visual feedback for correct weight distribution and foot placement, reducing injury risk and accelerating recovery.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>Raspberry Pi</li>
+                            <li>Computer Vision</li>
+                            <li>Load Sensors</li>
+                            <li>Hardware Design</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Sanat-agrwl/16-BIT-RISC-Processor" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="project-links">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>16-bit RISC Processor</h3>
+                        <p>
+                            Designed a multicycle RISC processor with a 6-stage pipeline. Integrated data forwarding for hazard mitigation and implemented on FPGA.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>Verilog</li>
+                            <li>Computer Architecture</li>
+                            <li>FPGA</li>
+                        </ul>
+                    </div>
+                </a>
+
+            </div>
+            <div class="more-projects">
+                <a href="https://github.com/Sanat-agrwl" class="btn">View Full Project Archive</a>
+            </div>
+        </section>
+
+        <section id="contact" class="section text-center">
+            <h2 class="section-title"><span>05.</span> Let's Connect</h2>
+            <h1 class="large-heading">Get In Touch</h1>
+            <p class="contact-desc">
+                I'm always excited to collaborate on interesting projects and discussing ideas, or just have a meaningful conversation. Whether you're exploring a research opportunity, have a creative project in mind, or simply want to chat about the intersection of engineering and innovation.          
+                <br> My inbox is always open and I usually respond within 24 hours.
+            </p>
+            <a href="mailto:sanatagrwl@gmail.com" class="btn btn-large">Start a Conversation</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Sanat-agrwl" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sanat-agrawal-249064255/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:sanatagrwl@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+        <p>Designed & built by Sanat Agrawal | © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
